@@ -10,7 +10,7 @@ How To Use
 
 It is pretty simple and sraight forward to use.
 
-Step 1: Initiate the class.
+Step 1: Initiate the class
 Step 2: set the delegate.
 Step 3: Add to your view.
 
