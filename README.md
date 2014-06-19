@@ -1,27 +1,19 @@
-TimePicker
-==========
-
-This is customised component for time selection for iPhone.
-
-Basically this pikcer gives you the same look and feel as you can see in Android Kitkat or in Google apps.
+Android Kitkat like TimePicker for iOS.
 
 How To Use
 ---------------
 
-It is pretty simple and sraight forward to use.
+1: Initiate the class
 
-Step 1: Initiate the class
+2: set the delegate.
 
-Step 2: set the delegate.
+3: Add to your view.
 
-Step 3: Add to your view.
 
-Thats all.... Pretty easy right.....as i said..!!!!!!
-
-What IT Returns (OutPut)
+What it Returns
 -----------------
 
-Implementation of delegate will return you 3 strings :
+Implementation of delegate will return 3 strings :
 
 1. Hour String.
 2. Minute String.
