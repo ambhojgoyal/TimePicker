@@ -20,7 +20,7 @@ How To Use
     IBOutlet UIButton *clockButton;
   }
   
-  @property (nonatomic, strong) UIView *clockView;
+  @property (nonatomic, strong) CustomTimePicker *clockView;
   
   -(IBAction)clockButtonPressed:(id)sender;
   
