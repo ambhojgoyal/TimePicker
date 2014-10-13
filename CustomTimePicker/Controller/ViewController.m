@@ -13,9 +13,12 @@
 @end
 
 @implementation ViewController
-CustomTimePicker *clockView;
+
+@synthesize clockView;
+
 UIButton *initiateClock = nil;
 UILabel * hourLabel = nil;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

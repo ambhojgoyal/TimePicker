@@ -6,8 +6,10 @@
 //  Copyright (c) 2014 Amboj Goyal. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "CustomTimePicker.h"
-@interface ViewController : UIViewController<CustomTimePickerDlegate>
-@property(nonatomic,strong)UIView *clockView;
+
+@interface ViewController : UIViewController<CustomTimePickerDelegate>
+
+@property (nonatomic,strong) CustomTimePicker *clockView;
+
 @end
