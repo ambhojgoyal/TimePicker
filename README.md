@@ -1,25 +1,58 @@
-Android Kitkat like TimePicker for iOS.
+Android Kitkat's TimePicker version for iOS
 
 How To Use
 ---------------
 
-1: Initiate the class
+1. Import CustomTimePicker.h
 
-2: set the delegate.
+2. Set CustomTimePickerDelegate
 
-3: Add to your view.
+3. Implement the Delegate's dismiss method
+
+4. Save/Use the clock's values
 
 
-What it Returns
------------------
+  
+  ClassUsingTimePicker.h
+  ```
+  #import "CustomTimePicker.h"
+  @interface ClassUsingTimePicker.h : UIViewController <CustomTimePickerDelegate> {
+    IBOutlet UIButton *clockButton;
+  }
+  
+  @property (nonatomic, strong) UIView *clockView;
+  
+  -(IBAction)clockButtonPressed:(id)sender;
+  
+  @end
+  ```
+  
+  ClassUsingTimePicker.m
+  ```
+  @implementation ClassUsingTimePicker
+  
+  @synthesize clockView;
+  
+  // Called when clockButton is pressed
+  -(IBAction)clockButtonPressed:(id)sender {
+    clockView = [[CustomTimePicker alloc] initWithView:self.view withDarkTheme:false];
+    clockView.delegate = self;
+    [self.view addSubview:clockView];
+  }
+  
+  // Delegate method called when clockView is dismissed
+  -(void)dismissClockViewWithHours:(NSString *)hours andMinutes:(NSString *)minutes andTimeMode:(NSString *)timeMode {
+    NSLog("%@:%@ %@", hours, minutes, timeMode);
+  }
+  
+  @end
+  ```
+
+What the Delegate returns
+-------------------------
 
 Implementation of delegate will return 3 strings :
 
 1. Hour String.
 2. Minute String.
 3. AM/PM String.
-
-
-Use the output as you like....
-
-
