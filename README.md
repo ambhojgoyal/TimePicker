@@ -42,7 +42,7 @@ How To Use
   
   // Delegate method called when clockView is dismissed
   -(void)dismissClockViewWithHours:(NSString *)hours andMinutes:(NSString *)minutes andTimeMode:(NSString *)timeMode {
-    NSLog("%@:%@ %@", hours, minutes, timeMode);
+    NSLog(@"%@:%@ %@", hours, minutes, timeMode);
   }
   
   @end
