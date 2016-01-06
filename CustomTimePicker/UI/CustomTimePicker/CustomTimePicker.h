@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-@protocol CustomTimePickerDlegate <NSObject>
+#import <UIKit/UIKit.h>
+@protocol CustomTimePickerDelegate <NSObject>
+
 -(void)dismissClockViewWithHours:(NSString *)hours andMinutes:(NSString *)minutes andTimeMode:(NSString *)timeMode;
+
 @end
 
 
-@interface CustomTimePicker : UIView<UIGestureRecognizerDelegate>
+@interface CustomTimePicker : UIView <UIGestureRecognizerDelegate>
 
-@property(nonatomic,unsafe_unretained)id<CustomTimePickerDlegate>delegate;
+@property (nonatomic,unsafe_unretained) id<CustomTimePickerDelegate> delegate;
 
 - (id)initWithView:(UIView *)view withDarkTheme:(BOOL)isDarkTheme ;
 

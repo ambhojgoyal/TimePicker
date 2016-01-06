@@ -24,7 +24,9 @@ alpha:1.0]
 #define kColonHeight 4.0f
 #define kColonOrigin 4.0f
 @interface CustomTimePicker()
+
 -(void)rotateHand:(UIView *)view rotationDegree:(float)degree;
+
 @end
 
 
